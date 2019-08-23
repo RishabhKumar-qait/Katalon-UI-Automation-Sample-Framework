@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>SignIn</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>2f5016f6-5a6d-4ca5-a505-f40aa2c3df3f</testCaseGuid>

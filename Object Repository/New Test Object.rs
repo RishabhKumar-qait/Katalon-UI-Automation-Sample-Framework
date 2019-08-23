@@ -7,23 +7,23 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[(contains(text(), 'Login') or contains(., 'Login'))]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//ul[@class='toggle-mobile']//a[contains(text(),'Login')]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>btn_login</name>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>text</name>
       <type>Main</type>
       <value>Login</value>
    </webElementProperties>

@@ -15,5 +15,23 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('katalon.com')
 
-WebUI.click(findTestObject('Object Repository/link_singnin'))
+WebUI.click(findTestObject('Object Repository/New Test Object'))
+
+WebUI.click(findTestObject('Email'))
+
+WebUI.sendKeys(findTestObject('Email'), 'rishabh.kumar@qainfotech.com')
+
+WebUI.sendKeys(findTestObject('Password'), 'Test@1234')
+
+WebUI.click(findTestObject('Sign_In'))
+
+WebUI.clearText(findTestObject('Password'))
+
+WebUI.sendKeys(findTestObject('Password'), 'Qait@1234')
+
+WebUI.click(findTestObject('Sign_In'))
+
+WebUI.verifyElementText(findTestObject('EncorrectText'), 'Incorrect email or password. Please try again')
+
+WebUI.refresh()
 
